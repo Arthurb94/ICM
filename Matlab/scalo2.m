@@ -14,7 +14,6 @@ function scalo2(signal,mark,ifolder,ifile)
             label = '';
         end
         if ~isempty(label)
-%         if not(strcmp(label,''))
             diff_indice = indice_fin - indice_deb; 
             fb = cwtfilterbank(signallength=double(diff_indice),...
                 samplingfrequency=Fs, ...
