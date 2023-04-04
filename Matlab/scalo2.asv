@@ -18,13 +18,15 @@ function scalo2(signal,mark,ifolder,ifile)
             fb = cwtfilterbank(signallength=double(diff_indice),...
                 samplingfrequency=Fs, ...
                 wavelet="Morse");
-            sig =             [cfs,frq] = wt(fb,sig);
+            sig = signal(indice_deb:(indice_fin-1));
+            [cfs,frq] = wt(fb,sig);
             t = (0:(diff_indice-1))/Fs;
             h = figure;
             pcolor(t,frq,abs(cfs));
             set(gca,'yscale','log');shading interp;axis tight;
             title('Scalogram');xlabel('Time (s)');ylabel('Frequency (Hz)');
-            saveas(h,strcat('data/',label,'/',string(ifolder),'_',string(ifile),'_',string(imark)),'jpg');
+            set(h, 'Units', 'pixels', 'Position', [0 0 224 224]);
+            saveas(h,strcat('data/images_A7/',label,'/',string(ifolder),'_',string(ifile),'_',string(imark)),'jpg');
         end
     end
 end
