@@ -25,7 +25,8 @@ function scalo2(signal,mark,ifolder,ifile)
             pcolor(t,frq,abs(cfs));
             set(gca,'yscale','log');shading interp;axis tight;
             title('Scalogram');xlabel('Time (s)');ylabel('Frequency (Hz)');
-            saveas(h,strcat('data/',label,'/',string(ifolder),'_',string(ifile),'_',string(imark)),'jpg');
+            set(h, 'Units', 'pixels', 'Position', [0 0 224 224]);
+            saveas(h,strcat('data/images_A5/',label,'/',string(ifolder),'_',string(ifile),'_',string(imark)),'jpg');
         end
     end
 end
