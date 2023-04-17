@@ -11,8 +11,6 @@ function scalo2(signal,mark,ifolder,ifile)
             label = 'gauche';
         elseif mark(imark,2) == 770
             label = 'droite';
-        elseif mark(imark,2) == 771
-            label = 'pied';
         else
             label = '';
         end
