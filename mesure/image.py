@@ -57,7 +57,8 @@ def show_image(image_path):
 
 # Boucle pour afficher une image aléatoire toutes les 10 secondes pendant 5 minutes
 l = []
-for i in range(25):
+cont = 0
+for i in range(26):
     if (i%2 == 0):
         image = 'images/droite.png'
     else:
@@ -65,7 +66,8 @@ for i in range(25):
     # Appel de la fonction pour afficher l'image
     show_image(image)
     l.append(image)
-
+    cont +=1
 # Fermeture de la fenêtre Tkinter
 root.destroy()
+print(cont)
 print(l)
