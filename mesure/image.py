@@ -42,7 +42,7 @@ def show_image(image_path):
     label = tk.Label(root, image=photo)
     label.pack()
     root.update()
-    time.sleep(5)
+    time.sleep(7)
     cross.close()
     label.destroy()
     
@@ -57,17 +57,12 @@ def show_image(image_path):
 
 # Boucle pour afficher une image aléatoire toutes les 10 secondes pendant 5 minutes
 l = []
-cont = 0
-for i in range(26):
-    if (i%2 == 0):
-        image = 'images/droite.png'
-    else:
-        image = 'images/gauche.png'
+for i in range(13):
+    image = 'images/droite.png'
+    # image = 'images/gauche.png'
     # Appel de la fonction pour afficher l'image
     show_image(image)
     l.append(image)
-    cont +=1
 # Fermeture de la fenêtre Tkinter
 root.destroy()
-print(cont)
 print(l)
