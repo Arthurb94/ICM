@@ -55,11 +55,11 @@ def show_image(image_path):
     image.close()
     label.destroy()
 
-# Boucle pour afficher une image aléatoire toutes les 10 secondes pendant 5 minutes
+# Boucle pour afficher une image (droite ou gauche) toutes les 7 secondes pendant 2 minutes 30
 l = []
 for i in range(13):
     image = 'images/droite.png'
-    # image = 'images/gauche.png'
+    #image = 'images/gauche.png'
     # Appel de la fonction pour afficher l'image
     show_image(image)
     l.append(image)

@@ -33,6 +33,6 @@ function scalo(signal,mouv,indice)
         set(gca,'yscale','log');shading interp;axis tight;
         title('Scalogram');xlabel('Time (s)');ylabel('Frequency (Hz)');
         set(h, 'Units', 'pixels', 'Position', [0 0 224 224]);
-        saveas(h,strcat('data/scalo/',string(mouv),'_',string(indice),'_',string(i)),'jpg');
+        saveas(h,strcat('data/data_pred/',string(mouv),'/',string(mouv),'_',string(indice),'_',string(i)),'jpg');
     end
 end
