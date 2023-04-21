@@ -7,3 +7,4 @@ function [pred] = prediction(model,image)
         pred = 2;
     end
 end
+
