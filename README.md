@@ -22,7 +22,7 @@ Trace les scalogrammes à partir des signaux en appelant la fonction 'scalo2.m'.
 #### - data/images_A...
 Fichiers contenant l'ensemble des scalogrammes tracés grâce au script scalogramme.mlx selon le mouvement réalisé.
 
-# 3) Création des modèles et prédictions
+## 3) Création des modèles et prédictions
 
 #### - Model_maker.mlx
 Crée le modèle en entraînant le réseau de neurones GoogleNet. Il appelle pour ce faire le fichier model.mat qui correspond au modèle entraîné.
@@ -47,8 +47,6 @@ Trace les scalogrammes à partir des signaux de Marion en appelant la fonction '
 
 #### - 'data/data_pred' et 'data/data_train'
 Fichiers contenant l'ensemble des scalogrammes tracés grâce au script save_to_scalo.mlx selon le mouvement réalisé.
-
-# 3) Création des modèles et prédictions
 
 #### - Model_maker.mlx
 Créé le modèle en entraînant le réseau de neurones GoogleNet. Il appelle pour ce faire le fichier model.mat qui correspond au modèle entraîné.
